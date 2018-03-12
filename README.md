@@ -1,0 +1,1 @@
+wp-multitenancy-add-site
