@@ -57,7 +57,7 @@ Add themes in `{directory}/web/app/themes` as you would for a normal WordPress i
 
 ### Plugins
 
-Plugins are managed by the [WordPress core, themes and plugins instance]((https://github.com/handpressed/wp-multitenancy-boilerplate)) installed with WP Multitenancy Boilerplate, the "benevolent dictator", although there is flexibilty in how you choose to set this up.
+Plugins are managed by the [WordPress instance]((https://github.com/handpressed/wp-multitenancy-boilerplate)) installed with WP Multitenancy Boilerplate, the "benevolent dictator", although there is flexibilty in how you choose to set this up.
 
 ### Constants
 
