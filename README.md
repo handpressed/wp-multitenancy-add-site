@@ -57,7 +57,21 @@ Add themes in `{directory}/web/app/themes` as you would for a normal WordPress i
 
 ### Plugins
 
-Plugins are managed by the [WordPress instance]((https://github.com/handpressed/wp-multitenancy-boilerplate)) installed with WP Multitenancy Boilerplate, the "benevolent dictator", although there is flexibilty in how you choose to set this up.
+[WordPress Packagist](https://wpackagist.org) is already registered in the `composer.json` file so any plugins from the [WordPress Plugin Directory](https://wordpress.org/plugins/) can easily be required.
+
+To add a plugin, use `composer require <namespace>/<packagename>` from the command-line. If it's from WordPress Packagist then the namespace is always `wpackagist-plugin`, e.g.:
+
+```bash
+$ composer require wpackagist-plugin/jetpack:*
+```
+
+Whenever you add a new plugin or update WordPress core, run `composer update` to install your new packages.
+
+Themes and plugins are installed in the symlinked directories in `/var/opt/wp` and will be available to all multitenancy sites.
+
+You can continue to use the WordPress admin to update themes and plugins.
+
+Note: Some plugins may make modifications to the core `wp-config.php` file. Any modifications to `wp-config.php` that are required should be moved to an individual site's `config/wp-constants.php` file.
 
 ### Constants
 
