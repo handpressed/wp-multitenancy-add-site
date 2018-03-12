@@ -1,6 +1,6 @@
 # WordPress Multitenancy Add Site
 
-Adds WordPress sites to [handpressed/wp-multitenancy-boilerplate](https://github.com/handpressed/wp-multitenancy-boilerplate).
+Adds WordPress sites to [WP Multitenancy Boilerplate](https://github.com/handpressed/wp-multitenancy-boilerplate).
 
 - [Features](#features)
 - [Requirements](#requirements)
