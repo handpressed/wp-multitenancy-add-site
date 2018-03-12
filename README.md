@@ -49,7 +49,7 @@ Composer will also symlink `/var/opt/wp/wp-content/themes` to `web/app/themes`, 
 
 Open the `{directory}/conf/.env` file and add the new site's home URL (`WP_HOME`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
 
-Set your site's vhost document root to `/path/to/{directory}/web`.
+Set the site's vhost document root to `/path/to/{directory}/web`.
 
 ### Themes
 
