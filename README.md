@@ -98,7 +98,7 @@ Put custom core, theme and plugin constants in `conf/wp-constants.php`.
 
 ## See also
 
-[WordPress Dotenv Boilerplate](https://github.com/handpressed/wp-env-boilerplate)
+[WordPress Composer Boilerplate](https://github.com/handpressed/wp-composer-boilerplate)
 
 ## Credit
 
