@@ -47,7 +47,7 @@ Composer will also symlink `/var/opt/wp/wp-content/themes` to `web/app/themes`, 
 
 ## Configuration
 
-Open the `{directory}/conf/.env` file and add your new site's domain name (`WP_DOMAIN`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
+Open the `{directory}/conf/.env` file and add your new site's home URL (`WP_HOME`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
 
 Set your site's vhost document root to `/path/to/{directory}/web`.
 
@@ -79,7 +79,7 @@ Put custom core, theme and plugin constants in `{directory}/conf/wp-constants.ph
 
     ├── composer.json             → Manage versions of WordPress, plugins and dependencies
     ├── conf                      → WordPress configuration files
-    │   ├── .env       	      → WordPress environment variables (WP_DOMAIN, DB_NAME, DB_USER, DB_PASSWORD required)
+    │   ├── .env       	      → WordPress environment variables (WP_HOME, DB_NAME, DB_USER, DB_PASSWORD required)
     │   ├── wp-constants.php      → Custom core, theme and plugin constants
     │   ├── wp-env-config.php     → Primary WordPress config file (wp-config.php equivalent)
     │   └── wp-salts.php          → Authentication unique keys and salts (auto generated)
