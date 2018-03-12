@@ -1,0 +1,44 @@
+{
+	"name": "handpressed/wp-multitenancy-add-site",
+	"description": "Adds WordPress sites to handpressed/wp-multitenancy-boilerplate.",
+	"license": "MIT",
+	"type": "project",
+	"keywords": [
+		"WordPress",
+		"multitenancy",
+		"phpdotenv",
+		"CMS",
+		"composer",
+		"wpackagist"
+	],
+	"authors": [
+		{
+			"name": "Nicholas at HandPressed",
+			"email": "nicholas@handpressed.net",
+			"homepage": "https://handpressed.net",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"source": "https://github.com/handpressed/wp-multitenancy-add-site",
+		"issues": "https://github.com/handpressed/wp-multitenancy-add-site/issues"
+	},
+	"require": {
+		"php": ">=5.6",
+		"vlucas/phpdotenv": "^2.4",
+		"roots/wp-password-bcrypt": "1.0.0"
+	},
+	"scripts": {
+		"generate-salts": [
+			"echo '<?php' > conf/wp-salts.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> conf/wp-salts.php"
+		],
+		"post-create-project-cmd": [
+			"composer run generate-salts",
+			"php -r \"rename('conf/.env.example', 'conf/.env');\"",
+			"php -r \"symlink('/var/opt/wp', 'web/wp');\"",
+			"php -r \"symlink('/var/opt/wp/wp-content/themes', 'web/app/themes');\"",
+			"php -r \"symlink('/var/opt/wp/wp-content/plugins', 'web/app/plugins');\"",
+			"php -r \"symlink('/var/opt/wp/wp-content/mu-plugins', 'web/app/mu-plugins');\""
+		]
+	}
+}

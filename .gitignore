@@ -1,0 +1,24 @@
+# Application (plugins ignored since Composer manages them).
+web/app/plugins/*
+!web/app/plugins/index.php
+web/app/mu-plugins/*
+!web/app/mu-plugins/index.php
+
+# Add plugins not managed by Composer.
+#!web/app/plugins/plugin-name
+
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/index.php
+
+# WordPress
+web/wp
+
+# PHP dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/index.php
