@@ -18,7 +18,7 @@ Adds WordPress sites to [WP Multitenancy Boilerplate](https://github.com/handpre
 ## Features
 
 - Improved directory structure
-- Easy WordPress configuration with constants and environment files
+- Easy WordPress configuration with environment and constants files
 - Environment variables with [PHP dotenv](https://github.com/vlucas/phpdotenv)
 - Enhanced security (separated web root and secure passwords with [roots/wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
 - WordPress [multitenancy](https://en.wikipedia.org/wiki/Multitenancy) (a single instance of WordPress core, themes and plugins serving multiple sites)
