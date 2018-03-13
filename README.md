@@ -10,9 +10,8 @@ Adds WordPress sites to [WP Multitenancy Boilerplate](https://github.com/handpre
 	- [Themes](#themes)
 	- [Plugins](#plugins)
 	- [Constants](#constants)
-- [Directory structure](#directory-structure)
-- [Adding sites](#adding-sites)
-- [See also](#see-also)
+- [Directory Structure](#directory-structure)
+- [See Also](#see-also)
 - [Credit](#credit)
 
 ## Features
@@ -75,7 +74,7 @@ Note: Some plugins may make modifications to the core `wp-config.php` file. Any 
 
 Put custom core, theme and plugin constants in `conf/wp-constants.php`.
 
-## Directory structure
+## Directory Structure
 
     ├── composer.json             → Manage versions of WordPress, plugins and dependencies
     ├── conf                      → WordPress configuration files
@@ -96,7 +95,7 @@ Put custom core, theme and plugin constants in `conf/wp-constants.php`.
 
 `↔` denotes a symlink.
 
-## See also
+## See Also
 
 [WordPress Composer Boilerplate](https://github.com/handpressed/wp-composer-boilerplate)
 
