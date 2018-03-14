@@ -36,23 +36,25 @@ A WordPress instance installed with [WP Multitenancy Boilerplate](https://github
 
 ```bash
 $ composer create-project handpressed/wp-multitenancy-add-site {directory}
+
+$ cd {directory}
 ```
 
 Replace `{directory}` with the name of your new project, e.g. its domain name.
 
-Composer will symlink the existing WordPress instance added with WP Multitenancy Boilerplate in `/var/opt/wp` to `{directory}/web/wp`.
+Composer will symlink the existing WordPress instance added with WP Multitenancy Boilerplate in `/var/opt/wp` to `web/wp`.
 
 Composer will also symlink `/var/opt/wp/wp-content/themes` to `web/app/themes`, `/var/opt/wp/wp-content/plugins` to `web/app/plugins` and `/var/opt/wp/wp-content/mu-plugins` to `web/app/mu-plugins`.
 
 ## Configuration
 
-Open the `{directory}/conf/.env` file and add the new site's home URL (`WP_HOME`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
+Open the `conf/.env` file and add the new site's home URL (`WP_HOME`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
 
 Set the site's vhost document root to `/path/to/{directory}/web`.
 
 ### Themes
 
-Add themes in `{directory}/web/app/themes` as you would for a normal WordPress install. You can use the WordPress admin to update them.
+Add themes in `web/app/themes` as you would for a normal WordPress install. You can use the WordPress admin to update them.
 
 ### Plugins
 
@@ -97,7 +99,7 @@ Put custom core, theme and plugin constants in `conf/wp-constants.php`.
 
 ## See Also
 
-[WordPress Composer Boilerplate](https://github.com/handpressed/wp-composer-boilerplate)
+[WordPress Substratum](https://github.com/handpressed/substratum)
 
 ## Credit
 
