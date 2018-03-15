@@ -32,6 +32,7 @@
 	"require": {
 		"php": ">=5.6",
 		"vlucas/phpdotenv": "^2.4",
+		"oscarotero/env": "^1.1.0",
 		"roots/wp-password-bcrypt": "1.0.0"
 	},
 	"scripts": {
@@ -40,7 +41,7 @@
 		],
 		"post-create-project-cmd": [
 			"composer run generate-salts",
-			"php -r \"rename('conf/.env.example', 'conf/.env');\"",
+			"php -r \"rename('.env.example', '.env');\"",
 			"php -r \"symlink('/var/opt/wp', 'web/wp');\"",
 			"php -r \"symlink('/var/opt/wp/wp-content/themes', 'web/app/themes');\"",
 			"php -r \"symlink('/var/opt/wp/wp-content/plugins', 'web/app/plugins');\"",
