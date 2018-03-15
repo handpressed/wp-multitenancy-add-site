@@ -26,7 +26,6 @@ Adds WordPress sites to [WP Multitenancy Boilerplate](https://github.com/handpre
 
 - PHP 5.6+
 - Composer
-- WP Multitenancy Boilerplate
 
 ## Prerequisites
 
