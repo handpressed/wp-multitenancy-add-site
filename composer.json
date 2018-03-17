@@ -31,9 +31,24 @@
 	},
 	"require": {
 		"php": ">=5.6",
+		"composer/installers": "@stable",
 		"vlucas/phpdotenv": "^2.4",
 		"oscarotero/env": "^1.1.0",
 		"roots/wp-password-bcrypt": "1.0.0"
+	},
+	"extra": {
+		"wordpress-install-dir": "web/wp",
+		"installer-paths": {
+			"web/app/mu-plugins/{$name}": [
+				"type:wordpress-muplugin"
+			],
+			"web/app/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"web/app/themes/{$name}": [
+				"type:wordpress-theme"
+			]
+		}
 	},
 	"scripts": {
 		"generate-salts": [
