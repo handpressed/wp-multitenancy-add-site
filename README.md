@@ -2,17 +2,18 @@
 
 Adds WordPress sites to [WP Multitenancy Boilerplate](https://github.com/handpressed/wp-multitenancy-boilerplate).
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-	- [Themes](#themes)
-	- [Plugins](#plugins)
-	- [Constants](#constants)
-- [Directory Structure](#directory-structure)
-- [See Also](#see-also)
-- [Credit](#credit)
+- [WordPress Multitenancy Add Site](#wordpress-multitenancy-add-site)
+	- [Features](#features)
+	- [Requirements](#requirements)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
+	- [Configuration](#configuration)
+		- [Themes](#themes)
+		- [Plugins](#plugins)
+		- [Constants](#constants)
+	- [Directory Structure](#directory-structure)
+	- [See Also](#see-also)
+	- [Credit](#credit)
 
 ## Features
 
@@ -39,7 +40,7 @@ $ composer create-project handpressed/wp-multitenancy-add-site {directory}
 $ cd {directory}
 ```
 
-Replace `{directory}` with the name of your new project, e.g. its domain name.
+Replace `{directory}` with the name of your new WordPress project, e.g. its domain name.
 
 Composer will symlink the existing WordPress instance added with WP Multitenancy Boilerplate in `/var/opt/wp` to `web/wp` (see [Directory Structure](#directory-structure)).
 
