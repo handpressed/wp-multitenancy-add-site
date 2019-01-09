@@ -88,8 +88,8 @@ Put custom core, theme and plugin constants in `conf/wp-constants.php`.
     └── web                       → Web root (vhost document root)
         ├── app                   → wp-content equivalent
         │   ├── mu-plugins        ↔ Must-use plugins symlinked to /var/opt/wp/wp-content/mu-plugins
-        │   ├── plugins           ↔ Plugins Must-use plugins symlinked to /var/opt/wp/wp-content/plugins
-        │   ├── themes            ↔ Themes Must-use plugins symlinked to /var/opt/wp/wp-content/themes
+        │   ├── plugins           ↔ Plugins symlinked to /var/opt/wp/wp-content/plugins
+        │   ├── themes            ↔ Themes symlinked to /var/opt/wp/wp-content/themes
         │   └── uploads           → Uploads
         ├── index.php             → Loads the WordPress environment and template (never edit)
         └── wp                    ↔ WordPress core symlinked to /var/opt/wp (never edit)
