@@ -25,7 +25,7 @@ Adds WordPress sites to [WP Multitenancy Boilerplate](https://github.com/handpre
 
 ## Requirements
 
-- PHP 7.4+
+- PHP 8.1+
 - Composer
 
 ## Prerequisites
@@ -35,7 +35,7 @@ A WordPress instance installed with [WP Multitenancy Boilerplate](https://github
 ## Installation
 
 ```bash
-$ composer create-project handpressed/wp-multitenancy-add-site {directory}
+$ composer create-project handpressed/wp-multitenancy-add-site:dev-main {directory}
 
 $ cd {directory}
 ```
